@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFDEED"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="121dp"
+        android:layout_height="123dp"
+        android:background="@drawable/sunshine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="AlterAssist"
+        android:textColor="#E53935"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/circle_full"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/idcard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contact Info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/first"
+            android:background="@drawable/circle_full"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/puzzle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="My Memories" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/first"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/circle_full"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="recordVideoButtonPressed"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Make Memories" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fifth"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/first"
+            android:layout_marginTop="50dp"
+
+            android:layout_toRightOf="@id/first"
+            android:background="@drawable/circle_full"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/emotional_intelligence" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mood Journal" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/panicBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#C14A47"
+        android:text="EMERGENCY"
+        android:textSize="18sp"
+        app:cornerRadius="100dp" />
+
+</RelativeLayout>

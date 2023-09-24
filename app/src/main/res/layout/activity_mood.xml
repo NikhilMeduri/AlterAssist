@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#BFDEED"
+    tools:context=".Mood_Activity">
+
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="125dp"
+        android:layout_height="133dp"
+        android:background="@drawable/sunshine" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_view"
+        android:layout_height="wrap_content"
+        android:text="How Do You Feel?"
+        android:layout_above="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textSize="40sp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RatingBar
+            android:id="@+id/rating_Bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:backgroundTint="#95629F"
+        android:textSize="25sp"
+        android:layout_height="60dp"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeLayout"/>
+
+
+</RelativeLayout>
+

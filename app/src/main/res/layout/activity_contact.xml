@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#BFDEED"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="125dp"
+        android:layout_height="133dp"
+        android:background="@drawable/sunshine" />
+
+    <ImageView
+    android:id="@+id/contactPicture"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/oldies"
+        android:layout_below="@+id/topleftoval"
+    android:layout_gravity="center"/>
+
+    <TextView
+    android:id="@+id/nameTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="John Doe"
+    android:textSize="28sp"
+    android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+    android:id="@+id/BloodTypeView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Blood Type: B +ve"
+    android:textSize="18sp"
+    android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+    android:id="@+id/contactTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Phone: (123) 456-7890\n\tPlace: Schmalkalden\nMedical Notes: Dementia"
+    android:textSize="16sp"
+    android:layout_gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="290dp"
+        app:cornerRadius="100dp"
+        android:layout_width="200dp"
+        android:layout_weight="1"
+        android:backgroundTint="#EA7976"
+        android:textSize="18sp"
+        android:layout_height="60dp"
+        android:id="@+id/callBtn"
+        android:text="Place Call"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="0dp"
+        />
+</LinearLayout>
